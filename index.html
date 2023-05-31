@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Blackjack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <button onclick="startGame()">START GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <p id="player-el"></p>
+        <p id="error-el"></p>
+    </div>
+    <div id="instructions">
+        <h1>Instructions</h1>
+        <ul>
+            <li>
+                The objective of blackjack is to have a hand total closer to 21 than the dealer's hand total, without
+                exceeding 21. If your hand exceeds 21, it results in a bust and you lose the hand.
+            </li>
+            <li>
+                The numerical value of each card is as follows: number cards (2-10) are worth their face value, face
+                cards (Jack, Queen, King) are worth 10, and the Ace card is worth 11.
+            </li>
+            <li>
+                Each round has a cost of $100, and if you win, you will receive a payout of $300.
+            </li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
